@@ -7,7 +7,7 @@ This section covers advanced features and techniques for using the Document Conv
 You can customize the appearance of your HTML and PDF documents by providing a CSS file:
 
 ```bash
-python src/docconvert.py --input-file ./input.md --output-file ./output.pdf --from md --to pdf --css ./styles/custom.css
+python src/doctool.py --input-file ./input.md --output-file ./output.pdf --from md --to pdf --css ./styles/custom.css
 ```
 
 In your job file:
@@ -23,7 +23,7 @@ The Document Conversion Tool supports embedding images in your documents or link
 
 ```bash
 # Embed images in the output document
-python src/docconvert.py --input-file ./input.md --output-file ./output.pdf --from md --to pdf --embed-images
+python src/doctool.py --input-file ./input.md --output-file ./output.pdf --from md --to pdf --embed-images
 ```
 
 In your job file:
@@ -40,7 +40,7 @@ options:
 You can automatically generate a table of contents for your documents:
 
 ```bash
-python src/docconvert.py --input-file ./input.md --output-file ./output.pdf --from md --to pdf --toc
+python src/doctool.py --input-file ./input.md --output-file ./output.pdf --from md --to pdf --toc
 ```
 
 In your job file:
@@ -55,7 +55,7 @@ options:
 You can combine multiple documents into a single file:
 
 ```bash
-python src/docconvert.py --combine --input-dir ./docs --output-file ./combined.pdf --from md --to pdf --files intro.md chapter1.md chapter2.md
+python src/doctool.py --combine --input-dir ./docs --output-file ./combined.pdf --from md --to pdf --files intro.md chapter1.md chapter2.md
 ```
 
 In your job file:

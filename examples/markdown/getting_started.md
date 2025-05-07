@@ -23,13 +23,13 @@ The Document Conversion Tool provides a simple command-line interface for basic 
 
 ```bash
 # Convert a Markdown file to HTML
-python src/docconvert.py --input-file ./input.md --output-file ./output.html --from md --to html
+python src/doctool.py --input-file ./input.md --output-file ./output.html --from md --to html
 
 # Convert a Markdown file to PDF
-python src/docconvert.py --input-file ./input.md --output-file ./output.pdf --from md --to pdf
+python src/doctool.py --input-file ./input.md --output-file ./output.pdf --from md --to pdf
 
 # Convert all Markdown files in a directory to HTML
-python src/docconvert.py --input-dir ./docs --output-dir ./html --from md --to html
+python src/doctool.py --input-dir ./docs --output-dir ./html --from md --to html
 ```
 
 ### Using Job Files
@@ -38,10 +38,10 @@ For more complex conversion tasks, you can use job files in YAML or JSON format:
 
 ```bash
 # Use a YAML job file
-python src/docconvert.py --job-file ./my_job.yaml
+python src/doctool.py --job-file ./my_job.yaml
 
 # Use a JSON job file
-python src/docconvert.py --job-file ./my_job.json
+python src/doctool.py --job-file ./my_job.json
 ```
 
 If you run the tool without any arguments, it will look for a `.yaml` or `.json` file in the current directory and use that as the job file.

@@ -52,16 +52,16 @@ Enhance the CLI to support:
 Example usage:
 ```
 # Convert all markdown files in input_dir to HTML in output_dir
-python docconvert.py --input-dir ./input_dir --output-dir ./output_dir --from md --to html
+python doctool.py --input-dir ./input_dir --output-dir ./output_dir --from md --to html
 
 # Convert a specific file
-python docconvert.py --input-file ./input.md --output-file ./output.pdf --from md --to pdf
+python doctool.py --input-file ./input.md --output-file ./output.pdf --from md --to pdf
 
 # Combine multiple PDFs in order
-python docconvert.py --combine --input-dir ./pdfs --output-file ./combined.pdf --files file1.pdf file2.pdf file3.pdf
+python doctool.py --combine --input-dir ./pdfs --output-file ./combined.pdf --files file1.pdf file2.pdf file3.pdf
 
 # Use a job file
-python docconvert.py --job-file ./my_conversion_job.yaml
+python doctool.py --job-file ./my_conversion_job.yaml
 ```
 
 ### 3. Job File Support

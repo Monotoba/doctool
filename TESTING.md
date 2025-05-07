@@ -19,25 +19,25 @@ pip install -e .
 To run all tests from the command line:
 
 ```bash
-PYTHONPATH=/home/randy/projects/python-3/doc-tools python -m pytest
+PYTHONPATH=. python -m pytest
 ```
 
 To run a specific test file:
 
 ```bash
-PYTHONPATH=/home/randy/projects/python-3/doc-tools python -m pytest tests/test_conversion_fixed.py
+PYTHONPATH=. python -m pytest tests/test_conversion_fixed.py
 ```
 
 To run the fixed tests that are known to work:
 
 ```bash
-PYTHONPATH=/home/randy/projects/python-3/doc-tools python -m pytest tests/test_conversion_fixed.py tests/integration/test_conversion_process.py
+PYTHONPATH=. python -m pytest tests/test_conversion_fixed.py tests/integration/test_conversion_process.py
 ```
 
 To run all tests except the intentionally failing test:
 
 ```bash
-PYTHONPATH=/home/randy/projects/python-3/doc-tools python -m pytest -k "not test_simple_fail"
+PYTHONPATH=. python -m pytest -k "not test_simple_fail"
 ```
 
 ### PyCharm IDE
@@ -61,7 +61,10 @@ If you encounter issues with tests:
 
 1. **Path Issues**: Make sure PYTHONPATH is set correctly to include the project root
 2. **Missing Dependencies**: Verify all dependencies are installed
-3. **IDE Configuration**: In PyCharm, ensure the run configurations have the environment variable PYTHONPATH set to the project root
+3. **IDE Configuration**: In PyCharm, ensure the project is properly configured:
+   - The project root should be marked as a "Sources Root"
+   - The test directory should be marked as a "Test Sources Root"
+   - For run configurations, ensure the working directory is set to the project root
 
 ## Known Issues
 
