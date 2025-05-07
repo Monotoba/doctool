@@ -1,0 +1,33 @@
+# Example job file for document conversion
+
+input:
+  directory: ./examples/markdown
+  format: markdown
+  
+output:
+  directory: ./examples/output
+  format: pdf
+  
+options:
+  css: ./examples/styles/custom.css
+  toc: true
+  images:
+    embed: true
+    formats: ["jpg", "png", "webp", "svg"]
+  
+documents:
+  - title: "Introduction"
+    file: intro.md
+  - title: "Getting Started"
+    file: getting_started.md
+  - title: "Advanced Usage"
+    file: advanced_usage.md
+    
+combine:
+  enabled: true
+  output_file: complete_guide.pdf
+  metadata:
+    title: "Complete User Guide"
+    author: "Documentation Team"
+    subject: "Document Conversion Tool"
+    keywords: "documentation, conversion, markdown, html, pdf"
