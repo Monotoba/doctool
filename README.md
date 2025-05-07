@@ -20,8 +20,8 @@ A flexible, general-purpose document conversion tool that can convert between va
 
 1. Clone the repository:
    ```
-   git clone https://github.com/Monotoba/document-conversion-tool.git
-   cd document-conversion-tool
+   git clone git@github.com:Monotoba/doctool.git
+   cd doctool
    ```
 
 2. Install dependencies:
@@ -133,7 +133,7 @@ Example job file (JSON):
 ## Project Structure
 
 ```
-document-conversion-tool/
+doctool/
 ├── src/
 │   ├── docconvert/
 │   │   ├── converters/
@@ -194,8 +194,8 @@ python src/doctool.py --job-file ./examples/example_job.yaml
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Monotoba/document-conversion-tool.git
-   cd document-conversion-tool
+   git clone git@github.com:Monotoba/doctool.git
+   cd doctool
    ```
 
 2. Create a virtual environment:

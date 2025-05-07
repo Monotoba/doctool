@@ -38,7 +38,7 @@ DocTool is a flexible, general-purpose solution for converting between various d
 1. Clone the repository or download the source code:
 
 ```bash
-git clone https://github.com/Monotoba/doctool.git
+git clone git@github.com:Monotoba/doctool.git
 cd doctool
 ```
 
