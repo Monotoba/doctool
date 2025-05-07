@@ -19,7 +19,7 @@ class TestDocconvert:
     def test_parse_args(self):
         """Test parsing command-line arguments."""
         # Test with no arguments
-        with patch('sys.argv', ['docconvert.py']):
+        with patch('sys.argv', ['doctool.py']):
             args = docconvert_module.parse_args()
             assert args.job_file is None
             assert args.input_dir is None
@@ -35,13 +35,13 @@ class TestDocconvert:
             assert args.embed_images is False
         
         # Test with job file
-        with patch('sys.argv', ['docconvert.py', '--job-file', 'job.yaml']):
+        with patch('sys.argv', ['doctool.py', '--job-file', 'job.yaml']):
             args = docconvert_module.parse_args()
             assert args.job_file == 'job.yaml'
         
         # Test with input and output options
         with patch('sys.argv', [
-            'docconvert.py',
+            'doctool.py',
             '--input-dir', 'input',
             '--output-dir', 'output',
             '--from', 'md',
@@ -55,7 +55,7 @@ class TestDocconvert:
         
         # Test with combine options
         with patch('sys.argv', [
-            'docconvert.py',
+            'doctool.py',
             '--combine',
             '--input-dir', 'input',
             '--output-file', 'combined.pdf',

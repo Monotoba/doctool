@@ -45,7 +45,7 @@ document-conversion-tool/
 │   │   ├── image/
 │   │   │   └── image_handler.py
 │   │   └── utils/
-│   └── docconvert.py
+│   └── doctool.py
 ├── docs/
 │   ├── project_scope.md
 │   └── summary.md

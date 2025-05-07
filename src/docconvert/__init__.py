@@ -182,7 +182,7 @@ def main():
         # If no job file is found, print usage and exit
         print("Error: No job file found and insufficient command-line arguments provided.")
         print("Please specify a job file or provide the required command-line arguments.")
-        print("Run 'python docconvert.py --help' for more information.")
+        print("Run 'python doctool.py --help' for more information.")
         return 1
     
     except Exception as e:
